@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+}
+.show-height{
+    height: 120px;
+}
+.btn:hover, .active {
+    color: rgb(59,130,246) !important; /* Adjust this to your active button style */
+}
+.unactive{
+    color: black !important;
+}

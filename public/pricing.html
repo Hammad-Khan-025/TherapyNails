@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Sheet</title>
+  <meta name="description"
+    content="Discover Therapy Nail Spa, Caryâ€™s premier destination for rejuvenating nail and spa experiences. Explore our range of services including nail treatments, enhancements, massages, and hot wax. Visit us at 1313 Kildaire Farm Drive, Cary, NC 27511." />
+  <link rel="stylesheet" href="output.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- Anchor at the top of the page -->
+  <a id="top"></a>
+
+  <!-- navbar starts here -->
+  <nav class="sticky top-0 z-10">
+    <div class="flex justify-between items-center h-24 px-4 md:px-20 bg-white shadow-lg">
+      <a href="index.html"><img src="images/therapy-logo.png" alt="Therapy Nail Spa Logo" class="w-52" /></a>
+
+      <div class="text-xs sm:text-sm px-5 leading-5 navContactInfo">
+
+      </div>
+
+      <ul
+        class="flex flex-col md:flex-row fixed top-24 left-0 md:left-auto md:top-auto md:relative md:gap-10 font-medium leading-10 md:leading-none w-full md:w-auto text-center transition-all duration-500 ease-in-out h-0 bg-white md:bg-inherit tracking-wider overflow-hidden md:overflow-visible shadow-lg md:shadow-none md:text-gray-600 md:pb-4 border-t-2 md:border-none border-gray-100 topbar">
+        <li class="pt-5 md:pt-0">
+          <a class="hover:text-blue-500 pb-1 md:text-blue-500 md:hover:border-b-2 border-b-blue-500 unactive btn"
+            id="homeButton">Home</a>
+        </li>
+        <li>
+          <a class="hover:text-blue-500 pb-1 cursor-pointer md:hover:border-b-2 border-b-blue-500 active btn"
+            id="pricingButton" href="">Pricing</a>
+        </li>
+      </ul>
+
+      <button class="md:hidden focus:outline-none focus:ring-2 focus:ring-gray-600 px-3 py-1 rounded bar-btn">
+        <i class="fa-solid fa-bars text-gray-600"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- navbar ends here -->
+
+
+  <!-- pricing section starts here -->
+  <section id="pricingSection" class="">
+
+    <!-- generate pdf button start -->
+    <div class="flex justify-end mt-5 me-5">
+      <button id="generatePdfButton"
+        class="font-semibold py-1 px-3 rounded tracking-wider text-pink-400 hover:text-white bg-white hover:bg-pink-400 border-pink-400 border-2 transition duration-300 ease-in-out">
+        Pricing sheet as PDF
+      </button>
+    </div>
+    <!-- generate pdf button end -->
+
+    <div class="parent py-10 px-5 flex justify-evenly flex-wrap gap-5 -mt-10">
+      <div class="column1">
+        <!-- manicure, pedicure, and nail enhancement portion -->
+        <!-- This section will be populated dynamically by JavaScript -->
+      </div>
+
+      <div class="column2">
+        <!-- additional services, smooth body waxing, and image portion -->
+        <!-- This section will be populated dynamically by JavaScript -->
+      </div>
+    </div>
+
+    <div id="pricingSubSection">
+
+    </div>
+
+
+  </section>
+  <!-- pricing section ends here -->
+
+
+
+  <!-- footer section starts here -->
+  <footer>
+    <p class="sm:text-center p-6 tracking-widest text-sm md:text-base">
+      Copyright © 2024 TherapyNailSpa
+    </p>
+  </footer>
+  <!-- footer section ends here -->
+
+  <!-- fixed bottom button -->
+  <a href="#" class="footer-btn hidden"><i
+      class="fa-solid fa-chevron-up text-white bg-blue-500 w-8 h-8 fixed right-4 md:right-10 bottom-4 md:bottom-5 rounded text-center pt-2"></i></a>
+
+  <script src="index.js"></script>
+  <script src="pricing.html"></script>
+  <script src="siteConfig.js"></script>
+  <script src="pricingData.js"></script>
+</body>
+
+</html>
